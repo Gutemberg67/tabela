@@ -1,0 +1,195 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #077c21;
+    color: white;
+    padding: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.logo img {
+    width: 140px; /* Defina a largura desejada */
+    height: 80px;
+}
+
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 2em;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .nav-active {
+        display: flex;
+    }
+    .nav-item {
+        margin: 0;
+        padding: 1em 0;
+        width: 100%;
+    }
+    .nav-item a {
+        font-size: 1.5em;
+    }
+    .logo img {
+        height: 50px;
+    }
+}
+/* Estilos da listra RGB */
+.rgb-stripe {
+    height: 5px;
+    background: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 245, 61), rgb(41, 223, 5), rgb(22, 177, 22), rgb(10, 209, 133), rgb(45, 250, 4), rgb(4, 105, 34));
+    background-size: 200% 100%;
+    animation: animateStripe 5s linear infinite;
+}
+
+@keyframes animateStripe {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+/* Estilos da Seção de Contato */
+.contact {
+    background-color: #fff;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.contact-form {
+    margin-top: 2em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.75em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilos da Seção de Informações de Contato */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.contact-info .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contact-info ul li {
+    margin-bottom: 1em;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #077c21;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    
+}

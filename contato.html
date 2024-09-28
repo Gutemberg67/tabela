@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="estilo_contato.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Outros favicons para diferentes dispositivos e tamanhos -->
+    <link rel="icon" href="faficon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="faficon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="foto_inicio.jpg" sizes="96x96" type="image/png">
+    <link rel="apple-touch-icon" href="faficon.png">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="done.html" class="logo">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav no-search">
+                <li class="nav-item"><a href="done.html">Início</a></li>               
+                <li class="nav-item"><a href="serviços.html">Serviços</a></li>
+                <li class="nav-item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="rgb-stripe"></div>
+    </header>
+
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h1>Entre em Contato Conosco</h1>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <h2>Informações de Contato</h2>
+                <ul>
+                    <li><strong>Endereço:</strong> Rua roberto scaf, 200 - Cúiaba, MT</li>
+                    <li><strong>Telefone:</strong> (65) 99992-3964</li>
+                    <li a href="done.com10@gmail.com" ><strong >E-mail:</strong> done.com10@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+ 
+
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav ul');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>
+</php!>

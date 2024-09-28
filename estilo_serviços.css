@@ -1,0 +1,204 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #077c21;
+    color: white;
+    padding: 1px;
+    right: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.logo img {
+    width: 140px; /* Defina a largura desejada */
+    height: 80px;
+    
+}
+
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 2em;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        margin-left: 20px;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .nav-active {
+        display: flex;
+    }
+    .nav-item {
+        margin: 0;
+        padding: 1em 0;
+        width: 100%;
+    }
+    .nav-item a {
+        font-size: 1.5em;
+    }
+    
+}
+
+/* Estilos da listra RGB */
+.rgb-stripe {
+    height: 5px;
+    background: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 245, 61), rgb(41, 223, 5), rgb(22, 177, 22), rgb(10, 209, 133), rgb(45, 250, 4), rgb(4, 105, 34));
+    background-size: 200% 100%;
+    animation: animateStripe 5s linear infinite;
+}
+
+@keyframes animateStripe {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+/* Estilos da Barra de Pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+}
+
+.search-bar button[type="button"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button[type="button"]:hover {
+    background-color: #555;
+}
+
+/* Estilos da Tabela de Serviços */
+.services {
+    background-color: #fff;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.services .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.services h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.search-results {
+    margin-top: 2em;
+    text-align: left;
+}
+
+#servicesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#servicesTable th, #servicesTable td {
+    padding: 1em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#servicesTable th {
+    background-color: #f2f2f2;
+}
+
+#noResults {
+    color: #999;
+    margin-top: 1em;
+}
+
+
+/* cor botão pedir serviço*/
+
+.btn-pedir-servico {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-pedir-servico.green {
+    background-color: #4CAF50; /* Verde */
+}
+.btn-pedir-servico.blue {
+    background-color: #4CAF50; /* Azul */
+}
+.btn-pedir-servico.red {
+    background-color: #4CAF50; /* Vermelho */
+}
+.btn-pedir-servico.purple {
+    background-color: #4CAF50; /* Roxo */
+}
+/* Adicione mais classes de cor conforme necessário */
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #077c21;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}

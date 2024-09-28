@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONE</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Outros favicons para diferentes dispositivos e tamanhos -->
+    <link rel="icon" href="faficon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="faficon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="foto_inicio.jpg" sizes="96x96" type="image/png">
+    <link rel="apple-touch-icon" href="faficon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="done.html" class="logo">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav no-search">
+                <li class="nav-item"><a href="done.html">Início</a></li>
+                <li class="nav-item"><a href="serviços.html">Serviços</a></li>
+                <li class="nav-item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="rgb-stripe"></div>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="slide1.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="slide2.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="slide3.png" alt="Slide 3">
+            </div>
+        </div>
+        <!-- Controles -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+   </div>
+ </div>
+<br>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="foto_inicio.jpg" alt="Desbloqueio de Celular">
+                </div>
+                <div class="hero-text">
+                    <h1>DONE</h1>
+                    <p class="hero-p">Liberte seu dispositivo com segurança e facilidade
+                        Se você está preso com um celular bloqueado por uma operadora ou com restrições de fábrica, 
+                        nós oferecemos soluções rápidas e confiáveis para desbloqueio. 
+                        Com nossa equipe especializada e métodos seguros, garantimos que seu celular volte a ser 
+                        totalmente funcional em pouco tempo.</p>
+                        <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Outros conteúdos da página aqui -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Desbloqueio de Celular. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav ul');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+
+<script src="java.js"></script>
+<!-- criado por gutemberg67-->
+</body>
+</html>

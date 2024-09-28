@@ -1,0 +1,221 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b9b9b9;
+}
+
+header {
+    background-color: #077c21;
+    color: white;
+    padding: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.logo img {
+    width: 140px; /* Defina a largura desejada */
+    height: 80px;
+}
+
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 2em;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .nav-active {
+        display: flex;
+    }
+    .nav-item {
+        margin: 0;
+        padding: 1em 0;
+        width: 100%;
+    }
+    .nav-item a {
+        font-size: 1.5em;
+    }
+    .logo img {
+        height: 100px; /* Ajuste conforme necessário */
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+}
+
+/* Estilos da listra RGB */
+.rgb-stripe {
+    height: 5px;
+    background: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 245, 61), rgb(41, 223, 5), rgb(22, 177, 22), rgb(10, 209, 133), rgb(45, 250, 4), rgb(4, 105, 34));
+    background-size: 200% 100%;
+    animation: animateStripe 5s linear infinite;
+}
+
+@keyframes animateStripe {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    max-width: 150%;
+    margin-right:400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 1500px;
+    right: 664px;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilos da Seção de Herói (Hero Section) */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero {
+    background-color: #b9b9b9;
+    padding: 50px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero-text {
+    flex: 2;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: center;
+}
+
+.hero-text p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333;
+
+}
+/* Estilos para o rodapé */
+footer {
+    background-color: #077c21;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}

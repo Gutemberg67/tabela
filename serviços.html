@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Serviços</title>
+    <link rel="stylesheet" href="estilo_serviços.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Outros favicons para diferentes dispositivos e tamanhos -->
+    <link rel="icon" href="faficon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="faficon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="foto_inicio.jpg" sizes="96x96" type="image/png">
+    <link rel="apple-touch-icon" href="faficon.png">
+</head>
+    <header>
+        <nav>
+            <a href="done.html" class="logo">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
+                <button type="button" id="searchButton">Buscar</button>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav no-search">
+                <li class="nav-item"><a href="done.html">Início</a></li>
+                <li class="nav-item"><a href="serviços.html">Serviços</a></li>
+                <li class="nav-item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="rgb-stripe"></div>
+    </header>
+
+    <main>
+        <section class="services">
+            <div class="container">
+                <h1>Nossos Serviços</h1>
+                
+                <div class="search-results">
+                    <p id="noResults" style="display: none;">Nenhum resultado encontrado.</p>
+                    <table id="servicesTable">
+                        <thead>
+                            <tr>
+                                <th>Serviço</th>
+                                <th>Descrição</th>
+                                <th>Preço</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>baypass</td>
+                                <td>Desbloqueio de iPhone 5s ao X</td>
+                                <td>R$ 100,00</td>
+                                <td><button type="button" onclick="pedirServico('baypass')" class="btn-pedir-servico green">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>samsung FRP</td>
+                                <td>FRP samsung via IMEI</td>
+                                <td>R$ 150,00</td>
+                                <td><button type="button" onclick="pedirServico('samsung FRP')" class="btn-pedir-servico blue">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>xiaomi FRP</td>
+                                <td>FRP google xioami</td>
+                                <td>R$ 60,00</td>
+                                <td><button type="button" onclick="pedirServico('xiaomi FRP')" class="btn-pedir-servico red">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>xiaomi micloud</td>
+                                <td>Remoção conta micloud definitivo</td>
+                                <td>R$ 240,00</td>
+                                <td><button type="button" onclick="pedirServico('xiaomi micloud')" class="btn-pedir-servico purple">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>frp google</td>
+                                <td>FRP google por box-edl</td>
+                                <td>R$ 40,00</td>
+                                <td><button type="button" onclick="pedirServico('frp google')" class="btn-pedir-servico green">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>claro</td>
+                                <td>Desbloqueio operado claro brazil iPhone 8/13pro max</td>
+                                <td>R$ 400,00</td>
+                                <td><button type="button" onclick="pedirServico('claro')" class="btn-pedir-servico blue">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>xiaomi</td>
+                                <td>micloud semi definitivo consultar modelo</td>
+                                <td>R$ 100,00</td>
+                                <td><button type="button" onclick="pedirServico('xiaomi')" class="btn-pedir-servico red">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 11</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 11)</td>
+                                <td>R$ 645,43</td>
+                                <td><button type="button" onclick="pedirServico('iPhone 11')" class="btn-pedir-servico purple">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 11 pro</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 11 Pro)</td>
+                                <td>R$ 757,52</td>
+                                <td><button type="button" onclick="pedirServico('iPhone 11 pro')" class="btn-pedir-servico green">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 11 pro max</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 11 Pro max)</td>
+                                <td>R$ 758,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 11 pro max')" class="btn-pedir-servico blue">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 12</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 12)</td>
+                                <td>R$ 789,00</td>
+                                <td><button type="button" onclick="pedirServico('iPhone 12')" class="btn-pedir-servico red">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 12 pro</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 12 pro )</td>
+                                <td>R$ 868,00</td>
+                                <td><button type="button" onclick="pedirServico('iPhone 12 pro')" class="btn-pedir-servico purple">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 12 pro max</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 12 pro max)</td>
+                                <td>R$ 930,00</td>
+                                <td><button type="button" onclick="pedirServico('iPhone 12 pro max')" class="btn-pedir-servico green">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 12 mini</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 12 Mini)</td>
+                                <td>R$ 650,00</td>
+                                <td><button type="button" onclick="pedirServico('iPhone 12 mini')" class="btn-pedir-servico blue">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 13 pro</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 13 pro)</td>
+                                <td>R$ 1.200,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 13 pro')" class="btn-pedir-servico red">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 13</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 13)</td>
+                                <td>R$ 1.180,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 13')" class="btn-pedir-servico purple">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 13 pro max</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 13 Pro Max)</td>
+                                <td>R$ 1.265,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 13 pro max')" class="btn-pedir-servico green">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 14)</td>
+                                <td>R$ 1.265,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 14')" class="btn-pedir-servico blue">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 Plus</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 14 Plus)</td>
+                                <td>R$ 1.265,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 14 Plus')" class="btn-pedir-servico red">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 pro</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 14 Pro)</td>
+                                <td>R$ 1.265,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 14 pro')" class="btn-pedir-servico purple">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 14 pro max</td>
+                                <td>iRemoval Pro New Gen Hello Bypass com Sinal (iPhone 14 Pro Max)</td>
+                                <td>R$ 1.265,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 14 pro max')" class="btn-pedir-servico green">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 6/6s</td>
+                                <td>formatado-baypass</td>
+                                <td>R$ 80,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 6/6s')" class="btn-pedir-servico blue">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 7/7plus</td>
+                                <td>formatado-baypass</td>
+                                <td>R$ 150,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 7/7plus')" class="btn-pedir-servico red">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 8/8plus</td>
+                                <td>formatado-baypass</td>
+                                <td>R$ 200,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 8/8plus')" class="btn-pedir-servico purple">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone X</td>
+                                <td>formatado-baypass</td>
+                                <td>R$ 250,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone X')" class="btn-pedir-servico green">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone 6sp/6+</td>
+                                <td>formatado-baypass</td>
+                                <td>R$ 85,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone 6sp/6+')" class="btn-pedir-servico blue">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ipad 2018/2019/pro</td>
+                                <td>formatado-baypass</td>
+                                <td>R$ 160,00</td>
+                                <td><button type="button" onclick="pedirServico('Ipad 2018/2019/pro')" class="btn-pedir-servico red">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ipad Air2/mini/2017</td>
+                                <td>formatado-baypass</td>
+                                <td>R$ 60,00</td>
+                                <td><button type="button" onclick="pedirServico('Ipad Air2/mini/2017')" class="btn-pedir-servico purple">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone SE 2020 2ND</td>
+                                <td>formatado-baypass</td>
+                                <td>R$ 550,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone SE 2020 2ND')" class="btn-pedir-servico green">Pedir Serviço</button></td>
+                            </tr>
+                            <tr>
+                                <td>iphone SE 2020 3ND</td>
+                                <td>baypass-formatado</td>
+                                <td>R$ 620,00</td>
+                                <td><button type="button" onclick="pedirServico('iphone SE 2020 3ND')" class="btn-pedir-servico blue">Pedir Serviço</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+             
+             <script>
+                function pedirServico() {
+                    window.location.href = 'https://wa.me/5565999923964?text=Oi%20quero%20desbloquear%20um%20celular!'; // Substitua com o link desejado
+                }
+            </script>
+
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const servicesTable = document.getElementById('servicesTable');
+        const noResults = document.getElementById('noResults');
+
+        searchInput.addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase().trim();
+            let count = 0;
+
+            Array.from(servicesTable.getElementsByTagName('tr')).forEach(function(row, index) {
+                if (index !== 0) { // Ignorar cabeçalho da tabela
+                    const columns = row.getElementsByTagName('td');
+                    let found = false;
+
+                    Array.from(columns).forEach(function(column) {
+                        if (column.textContent.toLowerCase().indexOf(searchValue) > -1) {
+                            found = true;
+                        }
+                    });
+
+                    if (found) {
+                        row.style.display = '';
+                        count++;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                }
+            });
+
+            if (count === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
